@@ -1,14 +1,9 @@
 import express from 'express'
 const app = express()
 const port = process.env.PORT || 8080
+app.use(express.json())
 app.listen(port, () => console.log(`Server gestart op port: ${port}`));
 
-const data = {
-    "namen":[{
-        "naam": "test",
-        "jaar": 2024
-    }]
-}
 const automerken = {
     "namen":[{
         "naam": "toyota", 
@@ -27,13 +22,6 @@ const automodel = {
     "jaar": 2024
 }
 
-
-
-// app.get('/', (req, res) =>{
-//     console.log("endpoint", req.method);
-//     res.sendStatus(200)
-// })
-
 app.get('/data/automerken', (req, res) =>{
     res.status(200).send(automerken)
 })
@@ -45,6 +33,6 @@ app.get('/data/autmodel', (req, res) =>{
 })
 
 app.post('/data/automerken', (req, res) =>{
-    data.push(req.body)
+    automerken.push(req.body)
     res.sendStatus(200)
 })
