@@ -23,6 +23,9 @@ app.get('/autos', (req, res) =>{
 })
 
 app.post('/autos', (req, res) =>{
-    automerken.push(req.body)
+    autos.push(req.body)
     res.sendStatus(200)
 })
+
+
+export{autos}

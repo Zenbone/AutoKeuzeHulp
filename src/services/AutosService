@@ -1,0 +1,11 @@
+async function getAutos(){
+    let resp = await fetch("/autos");
+    let json = await resp.json();
+    if (resp.ok) {
+        return json
+    }else {
+        console.log(json.error);
+    }
+}
+
+export{getAutos}
