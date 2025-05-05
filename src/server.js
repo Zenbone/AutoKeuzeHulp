@@ -3,7 +3,10 @@ import cors from 'cors'
 const app = express();
 const port = process.env.PORT || 8080;
 app.use(express.json());
-app.use(cors);
+app.use(cors());
+// app.use(cors({
+//   origin: 'https://jouwdomein.nl'
+// }));
 app.listen(port, () => console.log(`Server gestart op port: ${port}`));
 
 const autos = {
@@ -16,9 +19,13 @@ const autos = {
         "uitvoering": "elektrisch",
         "carrosserie": "compact"
       }
+    },
+    "volkswagen":{
+        "polo":{
+            "uitvoering": "gas"
+        }
     }
 }
-
 app.get('/autos', (req, res) =>{
     res.status(200).send(autos)
 })
