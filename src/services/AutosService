@@ -1,11 +1,19 @@
-async function getAutos(){
-    let resp = await fetch("/autos");
-    let json = await resp.json();
-    if (resp.ok) {
-        return json
-    }else {
-        console.log(json.error);
-    }
-}
+// async function getAutos(){
+//     let resp = await fetch("/autos");
+//     let json = await resp.json();
+//     if (resp.ok) {
+//         return json
+//     }else {
+//         console.log(json.error);
+//     }
+// }
 
-export{getAutos}
+// export{getAutos}
+fetch('https://autokeuzehulp.onrender.com/autos')
+  .then(response => response.json())
+  .then(data => {
+	data.forEach(function (d) {
+            console.log(d);
+            document.getElementById('testresult').textContent += d
+    });
+});
