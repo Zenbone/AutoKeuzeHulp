@@ -27,16 +27,24 @@
           }
         }
       }
-      let merknamen = Object.keys(autos);
-      for (let x in merknamen) {
-        let option = document.createElement("option");
-        option.text = merknamen[x]
-        document.querySelector('#addmerk').add(option);
+      // let merknamen = Object.keys(autos);
+      // for (let x in merknamen) {
+      //   let option = document.createElement("option");
+      //   option.text = merknamen[x]
+      //   document.querySelector('#addmerk').add(option);
+      // }
+      let addmerk = document.querySelector('#addmerk')
+      console.log(addmerk.options[0].text);
+      
+      for(let x in addmerk.options){
+        console.log(addmerk.options[x].text);
       }
     })
   </script>
 
   <select id="addmerk">
+    <option> opt1 </option>
+    <option> opt2 </option>
   </select>
   <select id="deletemerk">
   </select>
