@@ -1,0 +1,23 @@
+{
+  "toyota": {
+    "corolla": {
+      "uitvoering": "hybride",
+      "carrosserie": "hatchback"
+    },
+    "yaris": {
+      "uitvoering": "elektrisch",
+      "carrosserie": "compact"
+    }
+  },
+  "volkswagen": {
+    "polo": {
+      "uitvoering": "gas"
+    }
+  },
+  "kia": {
+    "rio": {
+      "uitvoering": "elektrisch",
+      "carrosserie": "sedan"
+    }
+  }
+}
