@@ -1,4 +1,4 @@
-import { autos } from "../server"
+import { autos } from "../../server"
 
 function pasfiltertoe(filters){
     // const resultaat = ""

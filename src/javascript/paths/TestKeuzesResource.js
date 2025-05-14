@@ -1,6 +1,5 @@
 import fs from 'fs';
-import { app, filePathTestKeuzes, testkeuzesfile } from '../app.js';
-import { log } from 'console';
+import { app, filePathTestKeuzes, testkeuzesfile } from '../../app.js'
 
 // const testkeuzesdummydata = {
 //   "merkfav": "toyota",

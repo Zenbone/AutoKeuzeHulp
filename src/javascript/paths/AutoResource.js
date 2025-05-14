@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { app, filePathAutos, autosfile } from '../app.js';
+import { app, filePathAutos, autosfile } from '../../app.js';
 
 // const autosdummydata = {
 //   "toyota": {

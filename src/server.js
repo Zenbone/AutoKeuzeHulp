@@ -1,6 +1,6 @@
 import { app } from './app.js';
-import './paths/AutoResource.js';
-import './paths/TestKeuzesResource.js';
+import './javascript/paths/AutoResource.js';
+import './javascript/paths/TestKeuzesResource.js';
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => {

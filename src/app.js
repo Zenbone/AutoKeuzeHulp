@@ -8,11 +8,11 @@ app.use(cors({
   origin: 'https://zenbone.site'
 }));
 
-const filePathAutos = './src/autos.json';
+const filePathAutos = './src/data/autos.json';
 const autodata = fs.readFileSync(filePathAutos, 'utf-8');
 const autosfile = JSON.parse(autodata);
 
-const filePathTestKeuzes = './src/testkeuzes.json';
+const filePathTestKeuzes = './src/data/testkeuzes.json';
 const datatestkeuzes = fs.readFileSync(filePathTestKeuzes, 'utf-8');
 const testkeuzesfile = JSON.parse(datatestkeuzes);
 

@@ -1,2 +1,5 @@
 ###
-GET https://autokeuzehulp.onrender.com/autos
+GET https://autokeuzehulp.onrender.com/testkeuzes
+
+###
+DELETE  https://autokeuzehulp.onrender.com/testkeuzes/favmerken
