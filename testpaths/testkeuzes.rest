@@ -1,12 +1,14 @@
 ###
 GET http://localhost:8080/testkeuzes
+###
+GET http://localhost:8080/testkeuzes/uitvoering
 
 ###
 POST http://localhost:8080/testkeuzes HTTP/1.1
 content-type: application/json
 
 {
-    "prijsmax" : "20000"
+    "uitvoering" : "waterstof"
 }
 
 ###

@@ -5,7 +5,10 @@ GET http://localhost:8080/autos
 GET http://localhost:8080/autos/toyota
 
 ###
-GET http://localhost:8080/autos/toyota/yaris
+GET http://localhost:8080/autos/toyota/mirai
+
+###
+GET http://localhost:8080/autos/toyota/mirai/afbeelding
 
 ###
 POST http://localhost:8080/autos HTTP/1.1

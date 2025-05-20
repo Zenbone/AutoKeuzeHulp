@@ -29,6 +29,9 @@ app.get('/autos/:merk', (req, res) => {
 app.get('/autos/:merk/:model', (req, res) => {
   res.status(200).send(autosfile[req.params.merk][req.params.model])
 })
+app.get('/autos/:merk/:model/:spec', (req, res) => {
+  res.status(200).send(autosfile[req.params.merk][req.params.model][req.params.spec])
+})
 
 app.post('/autos', (req, res) => {
   let { merk, model, specs } = req.body

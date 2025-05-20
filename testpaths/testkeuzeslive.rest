@@ -4,5 +4,5 @@ GET https://autokeuzehulp.onrender.com/testkeuzes
 ###
 DELETE  https://autokeuzehulp.onrender.com/testkeuzes/interesses
 
-// favmerken    onfavmerken     uitvoering      soortautos    gebruik   interesses
+// favmerken    onfavmerken     uitvoeringen      soortautos    gebruik   interesses
 

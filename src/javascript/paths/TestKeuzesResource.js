@@ -16,6 +16,9 @@ import { app, filePathTestKeuzes, testkeuzesfile } from '../../app.js'
 app.get('/testkeuzes', (req, res) => {
     res.status(200).send(testkeuzesfile)
 })
+app.get('/testkeuzes/:keuze', (req, res) => {
+    res.status(200).send(testkeuzesfile[req.params.keuze])
+})
 
 app.post('/testkeuzes', (req, res) => {
     let nieuwekeuzes = req.body
