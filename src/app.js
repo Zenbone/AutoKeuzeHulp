@@ -7,6 +7,8 @@ app.use(express.json());
 app.use(cors({
   origin: 'https://zenbone.site'
 }));
+app.use(express.static('public'));
+
 
 const filePathAutos = './src/data/autos.json';
 const autodata = fs.readFileSync(filePathAutos, 'utf-8');

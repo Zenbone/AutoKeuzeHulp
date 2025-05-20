@@ -4,9 +4,10 @@
       "uitvoering": "hybride",
       "carrosserie": "hatchback"
     },
-    "yaris": {
+    "mirai": {
       "uitvoering": "elektrisch",
-      "carrosserie": "compact"
+      "carrosserie": "sedan",
+      "afbeelding" : "/images/mirai.jpg"
     }
   },
   "volkswagen": {

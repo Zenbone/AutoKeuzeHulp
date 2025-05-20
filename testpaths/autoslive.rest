@@ -1,2 +1,38 @@
 ###
-GET https://autokeuzehulp.onrender.com/testkeuzes
+GET https://autokeuzehulp.onrender.com/autos
+
+###
+GET https://autokeuzehulp.onrender.com/autos/toyota
+
+###
+GET https://autokeuzehulp.onrender.com/autos/toyota/yaris
+
+###
+POST https://autokeuzehulp.onrender.com/autos HTTP/1.1
+content-type: application/json
+
+{
+    "merk": "kia",
+    "model": "rio",
+    "specs": {"uitvoering": "elektrisch", "carrosserie": "sedan"}
+}
+
+###
+PATCH  https://autokeuzehulp.onrender.com/autos/kia/rio HTTP/1.1
+content-type: application/json
+
+{
+    "uitvoering": "elektrisch",
+    "versnelling": "coupe"
+}
+
+###
+DELETE  https://autokeuzehulp.onrender.com/autos/kia
+
+###
+DELETE  https://autokeuzehulp.onrender.com/autos/kia/rio
+
+###
+DELETE  https://autokeuzehulp.onrender.com/autos/kia/rio/uitvoering
+
+# afbeeldingurl prijs uitvoering+versnelling soort [tags] kilometerbereik verbruikper100km kofferbakruimte emissieklasse motorcilinders gewicht (kleuren? interieurruimte?)

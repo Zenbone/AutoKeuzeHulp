@@ -2,7 +2,7 @@
 GET https://autokeuzehulp.onrender.com/testkeuzes
 
 ###
-DELETE  https://autokeuzehulp.onrender.com/testkeuzes/gebruik
+DELETE  https://autokeuzehulp.onrender.com/testkeuzes/interesses
 
-// favmerken    onfavmerken     uitvoering      soortautos    gebruik 
+// favmerken    onfavmerken     uitvoering      soortautos    gebruik   interesses
 
