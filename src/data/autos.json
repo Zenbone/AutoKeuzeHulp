@@ -3,12 +3,15 @@
     "corolla": {
       "uitvoering": "hybride",
       "carrosserie": "hatchback",
-      "afbeelding": "/images/corolla.jpg"
+      "afbeelding": "/images/corolla.jpg",
+      "tags": ["efficient", "goedkoop" ]
     },
     "mirai": {
       "uitvoering": "elektrisch",
       "carrosserie": "sedan",
-      "afbeelding" : "/images/mirai.jpg"
+      "afbeelding" : "/images/mirai.jpg",
+      "tags": ["luxe", "ruim" ]
+
     }
   },
   "volkswagen": {
