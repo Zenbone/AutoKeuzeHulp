@@ -2,7 +2,8 @@
   "toyota": {
     "corolla": {
       "uitvoering": "hybride",
-      "carrosserie": "hatchback"
+      "carrosserie": "hatchback",
+      "afbeelding": "/images/corolla.jpg"
     },
     "mirai": {
       "uitvoering": "elektrisch",
