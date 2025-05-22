@@ -8,26 +8,33 @@
 // 	laadScripts()
 // })
 
-import { getData } from '../../app.js';
+import { getData } from '../pathservices/GetData.js';
 import { filterAutosMetKeuzes } from '../utils/filter.js';
 
-document.addEventListener("DOMContentLoaded", function () {
-  let autos = getData("/autos")
-  let testkeuzes = getData("/testkeuzes")
-  let gefilterd = filterAutosMetKeuzes(autos, testkeuzes)
+async function main() {
+  
+  try {
+    let autos = await getData("/autos/toyota");
+    let testkeuzes = await getData("/testkeuzes")
+    // 	let autosgefilterd = filterAutosMetKeuzes(autos, testkeuzes)
+    let temp = document.querySelector("#modeltemplate")
 
-  let temp = document.getElementsByTagName("template")[0];
-
-  for (let i = 0; i < Object.keys(gefilterd).length; i++) {
-    let tempclone = temp.content.cloneNode(true);
-    let imgurl = tempclone.querySelector("img");
-    let h3 = tempclone.querySelector("h3");
-    let p = tempclone.querySelector("p");
-    imgurl.src = testkeuzes[afbeelding]
-    h3.textContent = Object.keys(gefilterd)[i]
-    p.textContent = gefilterd[i][tags]
-    document.querySelector(".autosrij").appendChild(tempclone);
+    for (let auto in autos) { //autosgefilterd
+      let tempclone = temp.content.cloneNode(true);
+      let afbeeldingauto = tempclone.querySelector("img");
+      let modelnaam = tempclone.querySelector("h2");
+      let tags = tempclone.querySelector("p");
+	  let afbeeldingpath = autos[auto].afbeelding //autosgefilterd
+      afbeeldingauto.src = `https://autokeuzehulp.onrender.com${afbeeldingpath}` // autosgefilterd
+      modelnaam.textContent  = auto //autosgefilterd
+      tags.textContent = autos[auto].tags //autosgefilterd
+      document.querySelector(".autosrij").appendChild(tempclone);
+    }
+  } catch (err) {
+    console.error(err);
+    // niks laten zien?
   }
 
+}
 
-})
+document.addEventListener("DOMContentLoaded", main)

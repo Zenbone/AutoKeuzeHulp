@@ -1,3 +1,11 @@
 {
-  "uitvoering": "waterstof"
+  "favmerken" : ["toyota", "kia"],
+  "onfavmerken" : ["volkswagen, peugot"],
+  "uitvoering": "waterstof",
+  "soort" : "sedan",
+  "gebruik" : ["alledaags", "road"],
+  "interesses" : "effibetr",
+  "minprijs" : "10000",
+  "maxprijs" : "20000"
+
 }

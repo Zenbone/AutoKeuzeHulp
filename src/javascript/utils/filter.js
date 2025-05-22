@@ -8,7 +8,7 @@ function filterAutosMetKeuzes(autos, keuzes){
 					if(keuze === spec){ 
 // 						als spec een array is bijvoorbeeld meerdere favoriete merken check of alle keuzes
 						if(Array.isArray(keuzes[keuze])){
-							for(let k of keuzes[keuze]){
+							for(let k in keuzes[keuze]){
 								if(keuzes[keuze] === model[spec]){
 									match ++
 								}
