@@ -1,28 +1,54 @@
-function filterAutosMetKeuzes(autos, keuzes){
-	let match = 0;
-	for(let keuze in keuzes){
-		for(let merk in autos){
-			for(let model in merk){
-				for(let spec in model){
-// 					als key bestaat / hetzelfde is als andere key:
-					if(keuze === spec){ 
-// 						als spec een array is bijvoorbeeld meerdere favoriete merken check of alle keuzes
-						if(Array.isArray(keuzes[keuze])){
-							for(let k in keuzes[keuze]){
-								if(keuzes[keuze] === model[spec]){
-									match ++
+function filterAutosMetKeuzes(autos, keuzes) {
+	let gefilterd = {}
+	let obj = {}
+
+	for (let keuze in keuzes) {
+		for (let merk in autos) {
+			for (let onfav in keuzes.onfavmerken) {
+				if (onfav !== merk || keuzes.onfavmerken === "geen") {
+					// 					merk is niet onfavoriet ga verder met code						
+
+
+
+
+
+					for (let model in autos[merk]) {
+						for (let spec in autos[merk][model]) {
+
+							if (keuze === spec) {
+								if (Array.isArray(keuzes[keuze])) {
+									console.log("isarray")
+									for (let k in keuzes[keuze]) {
+										// 								check wat voor keuze het is en vergelijk op de juiste manier
+										console.log(k)
+										console.log(keuze)
+
+
+									}
+								}
+								if (keuzes[keuze] !== "geen") {
+									// 							check wat voor keuze het is en vergelijk op de juiste manier
+									if (keuze === "")
+
+
+										if (!gefilterd[merk]) {
+											gefilterd[merk] = {}
+										}
+									gefilterd[merk][model] = autos[merk][model]
+									// 							break?
 								}
 							}
-// 						als spec gewoon string is en value van key hetzelfde is
-						}else if(keuzes[keuze] === model[spec]){
-							match++
 						}
+
 					}
 				}
-				
 			}
 		}
 	}
+	console.log(gefilterd)
+	// 	favmerken bovenaan zetten?
+
+	
 }
 
-export {filterAutosMetKeuzes}
+export { filterAutosMetKeuzes }

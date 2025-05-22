@@ -2,12 +2,14 @@
   "toyota": {
     "corolla": {
       "uitvoering": "hybride",
+      "versnelling": "automaat",
       "carrosserie": "hatchback",
       "afbeelding": "/images/corolla.jpg",
       "tags": ["efficient", "goedkoop" ]
     },
     "mirai": {
       "uitvoering": "elektrisch",
+      "versnelling": "automaat",
       "carrosserie": "sedan",
       "afbeelding" : "/images/mirai.jpg",
       "tags": ["luxe", "ruim" ]
@@ -16,13 +18,15 @@
   },
   "volkswagen": {
     "polo": {
-      "uitvoering": "gas"
+      "uitvoering": "benzine",
+      "versnelling": "schakel"
+
     }
   },
   "kia": {
     "rio": {
-      "uitvoering": "elektrisch",
-      "carrosserie": "sedan"
+      "uitvoering": "diesel",
+      "carrosserie": "schakel"
     }
   }
 }

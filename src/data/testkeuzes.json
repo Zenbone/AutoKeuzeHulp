@@ -1,7 +1,7 @@
 {
   "favmerken" : ["toyota", "kia"],
   "onfavmerken" : ["volkswagen, peugot"],
-  "uitvoering": "waterstof",
+  "uitvoering": ["benzine", "schakel"],
   "soort" : "sedan",
   "gebruik" : ["alledaags", "road"],
   "interesses" : "effibetr",

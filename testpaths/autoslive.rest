@@ -35,4 +35,4 @@ DELETE  https://autokeuzehulp.onrender.com/autos/kia/rio
 ###
 DELETE  https://autokeuzehulp.onrender.com/autos/kia/rio/uitvoering
 
-# afbeeldingurl prijs [uitvoering+versnelling] soort [tags] kilometerbereik verbruikper100km kofferbakruimte emissieklasse motorcilinders gewicht (kleuren? interieurruimte?)
+# afbeeldingurl prijs uitvoering versnelling [soort] [tags] kilometerbereik verbruikper100km kofferbakruimte emissieklasse motorcilinders gewicht (kleuren? interieurruimte?)
