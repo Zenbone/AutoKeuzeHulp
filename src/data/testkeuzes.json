@@ -1,6 +1,6 @@
 {
   "favmerken" : ["toyota", "kia"],
-  "onfavmerken" : ["volkswagen, peugot"],
+  "onfavmerken" : "geen",
   "uitvoering": ["benzine", "schakel"],
   "soort" : ["sedan", "hatchback"],
   "gebruik" : ["alledaags", "road"],
