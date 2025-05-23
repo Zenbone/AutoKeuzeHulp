@@ -2,7 +2,7 @@
   "favmerken" : ["toyota", "kia"],
   "onfavmerken" : ["volkswagen, peugot"],
   "uitvoering": ["benzine", "schakel"],
-  "soort" : ["sedan"],
+  "soort" : ["sedan", "hatchback"],
   "gebruik" : ["alledaags", "road"],
   "interesses" : "efficient-betrouwbaar",
   "minprijs" : "10000",
