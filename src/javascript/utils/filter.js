@@ -1,13 +1,18 @@
+
 function filterAutosMetKeuzes(autos, keuzes) {
 	let gefilterd = {}
 	let matchpunten = 0
 	let criteria = []
-
+	let onfavoriet = true
+	
 	for (let keuze in keuzes) {
-		if (keuzes[keuze] !== "geen") {
+		if (keuzes[keuze] !== "geen") { //onfav
 			for (let merk in autos) {
-				for (let onfav in keuzes.onfavmerken) {
-					if (onfav !== merk) {	// || keuzes.onfavmerken === "geen"
+				
+				for (let onfav of keuzes.onfavmerken) {
+					onfavoriet = (merk === onfav) //onfav 
+				}					
+					if (!onfavoriet) {	
 						for (let model in autos[merk]) {
 
 							matchpunten = 0
@@ -28,14 +33,13 @@ function filterAutosMetKeuzes(autos, keuzes) {
 								if (Array.isArray(keuzes[keuze])) {
 									for (let k of keuzes[keuze]) {
 										if (k === autos[merk][model].uitvoering ||k === autos[merk][model].versnelling ) {
-											console.log("uitvoering klopt!")
-											criteria.push("uitvoering klopt!")
+											console.log("versnelling / uitvoering klopt!")
+											criteria.push("versnelling / uitvoering klopt!")
 											matchpunten++
 										}
 									}
 								} else {
 									if (keuzes[keuze] === autos[merk][model].uitvoering) {
-										console.log("uitvoering klopt!")
 										criteria.push("uitvoering klopt!")
 										matchpunten++
 									}
@@ -43,8 +47,7 @@ function filterAutosMetKeuzes(autos, keuzes) {
 							}
 							else if (keuze === "soort") {
 								for (let k of keuzes[keuze]) {
-									if (k === autos[merk][model].soort) {
-										console.log("soort klopt!")
+									if (k === autos[merk][model].carrosserie) {
 										criteria.push("soort klopt!")
 										matchpunten++
 									}
@@ -66,7 +69,7 @@ function filterAutosMetKeuzes(autos, keuzes) {
 								for (let string of gesplittestring) {
 									for (let tag of autos[merk][model].tags) {
 										if (string === tag) {
-											console.log("interesse klopt met tags")
+// 											console.log("interesse klopt met tags")
 											criteria.push("interesse klopt met tags")
 											matchpunten++
 										}
@@ -82,9 +85,10 @@ function filterAutosMetKeuzes(autos, keuzes) {
 								Object.assign(gefilterd[merk][model], { criteria: criteria })
 							}
 						}
-					}
+						
+					}					
 					// 				merk is onfavoriet, overslaan of minpunten geven? als minpunten dan if keuze is geen veranderen. voor nu overslaan
-				}
+				
 			}
 		}
 	}
@@ -92,5 +96,6 @@ function filterAutosMetKeuzes(autos, keuzes) {
 	// 	return gefilterd en testkeuzes?
 	// 	modellen met hoogste matchpunten bovenaan zetten 
 }
+
 
 export { filterAutosMetKeuzes }
