@@ -12,9 +12,9 @@ POST https://autokeuzehulp.onrender.com/autos HTTP/1.1
 content-type: application/json
 
 {
-    "merk": "kia",
-    "model": "rio",
-    "specs": {"uitvoering": "elektrisch", "carrosserie": "sedan"}
+    "merk": "volkswagen",
+    "model": "polo",
+    "specs": {"tags": ["alledaags", "goedkoop"]}
 }
 
 ###
@@ -33,6 +33,6 @@ DELETE  https://autokeuzehulp.onrender.com/autos/kia
 DELETE  https://autokeuzehulp.onrender.com/autos/kia/rio
 
 ###
-DELETE  https://autokeuzehulp.onrender.com/autos/kia/rio/uitvoering
+DELETE  https://autokeuzehulp.onrender.com/autos/volkswagen/polo/tags
 
-# afbeeldingurl prijs uitvoering versnelling [soort] [tags] kilometerbereik verbruikper100km kofferbakruimte emissieklasse motorcilinders gewicht (kleuren? interieurruimte?)
+# afbeeldingurl prijs uitvoering versnelling soort [tags] kilometerbereik verbruikper100km kofferbakruimte emissieklasse motorcilinders gewicht (kleuren? interieurruimte?)

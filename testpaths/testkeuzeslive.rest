@@ -2,7 +2,14 @@
 GET https://autokeuzehulp.onrender.com/testkeuzes
 
 ###
-DELETE  https://autokeuzehulp.onrender.com/testkeuzes/uitvoering
+DELETE  https://autokeuzehulp.onrender.com/testkeuzes/interesses
 
 // favmerken    onfavmerken     uitvoering(+versnelling)      soortautos    gebruik   interesses
 
+###
+POST https://autokeuzehulp.onrender.com/testkeuzes HTTP/1.1
+content-type: application/json
+
+{
+    "interesses": "efficient-betrouwbaar"
+}
