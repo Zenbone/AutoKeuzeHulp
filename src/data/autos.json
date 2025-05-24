@@ -13,7 +13,7 @@
       "versnelling": "automaat",
       "carrosserie": "sedan",
       "afbeelding" : "/images/mirai.jpg",
-      "tags": ["luxe", "ruim" ],
+      "tags": ["luxe"],
       "prijs": 20000
 
     }
@@ -34,7 +34,7 @@
       "versnelling": "schakel",
       "carrosserie": "-",
       "afbeelding": "-",
-      "tags": ["modern"],
+      "tags": ["goedkoop"],
       "prijs": 8000
 
     }
