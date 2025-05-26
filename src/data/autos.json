@@ -23,7 +23,7 @@
       "uitvoering": "benzine",
       "versnelling": "schakel",
       "carrosserie": "compact",
-      "afbeelding": "/images/corolla.jpg",
+      "afbeelding": "/images/volkswagenpolo.jpg",
       "tags": ["goedkoop", "betrouwbaar"],
       "prijs": 5000
     }
@@ -33,7 +33,7 @@
       "uitvoering": "diesel",
       "versnelling": "schakel",
       "carrosserie": "-",
-      "afbeelding": "-",
+      "afbeelding": "/images/kiario.jpg",
       "tags": ["goedkoop"],
       "prijs": 8000
 

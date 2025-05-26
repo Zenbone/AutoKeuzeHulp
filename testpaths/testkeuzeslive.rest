@@ -11,6 +11,6 @@ POST https://autokeuzehulp.onrender.com/testkeuzes HTTP/1.1
 content-type: application/json
 
 {
-   "favmerken" : ["toyota", "kia", "volkswagen"]
+   "favmerken" : ["toyota", "volkswagen"]
 
 }
