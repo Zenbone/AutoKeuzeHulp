@@ -2,7 +2,7 @@
 GET https://autokeuzehulp.onrender.com/testkeuzes
 
 ###
-DELETE  https://autokeuzehulp.onrender.com/testkeuzes/interesses
+DELETE  https://autokeuzehulp.onrender.com/testkeuzes/favmerken
 
 // favmerken    onfavmerken     uitvoering(+versnelling)      soortautos    gebruik   interesses
 
@@ -11,5 +11,6 @@ POST https://autokeuzehulp.onrender.com/testkeuzes HTTP/1.1
 content-type: application/json
 
 {
-    "interesses": "efficient-betrouwbaar"
+   "favmerken" : ["toyota", "kia", "volkswagen"]
+
 }
