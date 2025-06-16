@@ -1,11 +1,1 @@
-{
-  "favmerken" : ["toyota", "kia", "volkswagen"],
-  "onfavmerken" : ["kia"],
-  "uitvoering": ["benzine", "schakel"],
-  "soort" : ["sedan", "hatchback"],
-  "gebruik" : ["alledaags", "road"],
-  "interesses" : "efficient-betrouwbaar",
-  "minprijs" : "10000",
-  "maxprijs" : "20000"
-
-}
+{}
