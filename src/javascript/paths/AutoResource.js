@@ -1,25 +1,6 @@
 import fs from 'fs';
 import { app, filePathAutos, autosfile } from '../../app.js';
 
-// const autosdummydata = {
-//   "toyota": {
-//     "corolla": {
-//       "uitvoering": "hybride",
-//       "carrosserie": "hatchback"
-//     },
-//     "yaris": {
-//       "uitvoering": "elektrisch",
-//       "carrosserie": "compact"
-//     }
-//   },
-//   "volkswagen":{
-//       "polo":{
-//           "uitvoering": "gas"
-//       }
-//   }
-// }
-// fs.writeFileSync(filePathAutos, JSON.stringify(autosdummydata));
-
 app.get('/autos', (req, res) => {
   res.status(200).send(autosfile)
 })
@@ -36,11 +17,7 @@ app.get('/autos/:merk/:model/:spec', (req, res) => {
 app.post('/autos', (req, res) => {
   let { merk, model, specs } = req.body
   let object = {}
-  // if(!autos[merk]){
-  //   if(!autos[merk][model]){
-  //     for(let x in specs){
-  //       if(autos[merk][model][specs][x])res.status(403).send(`specificaties: ${specs[x]} van model: ${model} van merk: ${merk} bestaat al!`)
-  //       else{
+
   if (!autosfile[merk]) {
     object = { [merk]: { [model]: specs } }
     Object.assign(autosfile, object)
@@ -57,11 +34,6 @@ app.post('/autos', (req, res) => {
     message: 'Object succesvol toegevoegd!',
     data: object
   });
-
-  //       }
-  //       }
-  //   }else res.status(403).send(`model: ${model} van merk: ${merk} bestaat al!`)
-  // }else res.status(403).send(`Merk ${merk} bestaat al!`)
 })
 
 app.patch('/autos/:merk/:model', (req, res) => {

@@ -5,17 +5,21 @@
       "versnelling": "automaat",
       "carrosserie": "hatchback",
       "afbeelding": "/images/corolla.jpg",
-      "tags": ["efficient", "betrouwbaar" ],
+      "tags": [
+        "efficient",
+        "betrouwbaar"
+      ],
       "prijs": 10000
     },
     "mirai": {
       "uitvoering": "elektrisch",
       "versnelling": "automaat",
       "carrosserie": "sedan",
-      "afbeelding" : "/images/mirai.jpg",
-      "tags": ["luxe"],
+      "afbeelding": "/images/mirai.jpg",
+      "tags": [
+        "luxe"
+      ],
       "prijs": 20000
-
     }
   },
   "volkswagen": {
@@ -24,19 +28,23 @@
       "versnelling": "schakel",
       "carrosserie": "compact",
       "afbeelding": "/images/volkswagenpolo.jpg",
-      "tags": ["goedkoop", "betrouwbaar"],
+      "tags": [
+        "goedkoop",
+        "betrouwbaar"
+      ],
       "prijs": 5000
     }
   },
   "kia": {
     "rio": {
-      "uitvoering": "diesel",
+      "uitvoering": "elektrisch",
       "versnelling": "schakel",
-      "carrosserie": "-",
+      "carrosserie": "sedan",
       "afbeelding": "/images/kiario.jpg",
-      "tags": ["goedkoop"],
+      "tags": [
+        "goedkoop"
+      ],
       "prijs": 8000
-
     }
   }
 }

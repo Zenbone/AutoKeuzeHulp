@@ -1,18 +1,6 @@
 import fs from 'fs';
 import { app, filePathTestKeuzes, testkeuzesfile } from '../../app.js'
 
-// const testkeuzesdummydata = {
-//   "merkfav": "toyota",
-//   "merkonfav": "volkswagen",
-//   "uitvoering": "hybride",
-//   "soort": "sedan",
-//   "gebruik": ["alledaags", "sport"],
-//   "interesses": "efficientbetrouwbaar",
-//   "prijsmin": "10000",
-//   "prijsmax": "20000"
-// }
-// fs.writeFileSync(filePathTestKeuzes, JSON.stringify(testkeuzesdummydata));
-
 app.get('/testkeuzes', (req, res) => {
     res.status(200).send(testkeuzesfile)
 })
