@@ -2,7 +2,7 @@
 GET https://autokeuzehulp.onrender.com/testkeuzes
 
 ###
-DELETE  https://autokeuzehulp.onrender.com/testkeuzes/favmerken
+DELETE  https://autokeuzehulp.onrender.com/testkeuzes/onfavmerken
 
 // favmerken    onfavmerken     uitvoering(+versnelling)      soortautos    gebruik   interesses
 

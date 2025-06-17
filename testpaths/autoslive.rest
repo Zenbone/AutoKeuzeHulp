@@ -8,7 +8,7 @@ GET https://autokeuzehulp.onrender.com/autos/toyota
 GET https://autokeuzehulp.onrender.com/autos/toyota/yaris
 
 ###
-POST https://autokeuzehulp.onrender.com/autos HTTP/1.1
+POST https://autokeuzehulp.onrender.com/160917062025/autos HTTP/1.1
 content-type: application/json
 
 {
@@ -18,7 +18,7 @@ content-type: application/json
 }
 
 ###
-PATCH  https://autokeuzehulp.onrender.com/autos/kia/rio HTTP/1.1
+PATCH  https://autokeuzehulp.onrender.com/160917062025/autos/kia/rio HTTP/1.1
 content-type: application/json
 
 {
@@ -27,12 +27,12 @@ content-type: application/json
 }
 
 ###
-DELETE  https://autokeuzehulp.onrender.com/autos/kia
+DELETE  https://autokeuzehulp.onrender.com/160917062025/autos/kia
 
 ###
-DELETE  https://autokeuzehulp.onrender.com/autos/kia/rio
+DELETE  https://autokeuzehulp.onrender.com/160917062025/autos/kia/rio
 
 ###
-DELETE  https://autokeuzehulp.onrender.com/autos/volkswagen/polo/tags
+DELETE  https://autokeuzehulp.onrender.com/160917062025/autos/volkswagen/polo/tags
 
 # afbeeldingurl prijs uitvoering versnelling soort [tags] kilometerbereik verbruikper100km kofferbakruimte emissieklasse motorcilinders gewicht (kleuren? interieurruimte?)

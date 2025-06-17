@@ -11,7 +11,7 @@ GET http://localhost:8080/autos/toyota/mirai
 GET http://localhost:8080/autos/toyota/mirai/afbeelding
 
 ###
-POST http://localhost:8080/autos HTTP/1.1
+POST http://localhost:8080/160917062025/autos HTTP/1.1
 content-type: application/json
 
 {
@@ -21,20 +21,20 @@ content-type: application/json
 }
 
 ###
-PATCH  http://localhost:8080/autos/kia/rio HTTP/1.1
+PATCH  http://localhost:8080/160917062025/autos/kia/rio HTTP/1.1
 content-type: application/json
 
 {
-    "uitvoering": "elektrisch",
-    "versnelling": "coupe"
+    "uitvoering": "diesel"
+    # "versnelling": "coupe"
 }
 
 ###
-DELETE  http://localhost:8080/autos/kia
+DELETE  http://localhost:8080/160917062025/autos/kia
 
 ###
-DELETE  http://localhost:8080/autos/kia/rio
+DELETE  http://localhost:8080/160917062025/autos/kia/rio
 
 ###
-DELETE  http://localhost:8080/autos/kia/rio/uitvoering
+DELETE  http://localhost:8080/160917062025/autos/kia/rio/uitvoering
 

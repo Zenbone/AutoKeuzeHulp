@@ -9,6 +9,10 @@ app.get('/testkeuzes/:keuze', (req, res) => {
 })
 
 app.post('/testkeuzes', (req, res) => {
+    const origin = req.get('Origin');
+    if (origin !== 'https://zenbone.site') {
+    return res.status(403).json({ message: 'Niet toegestaan (origin)' });
+    }
     let nieuwekeuzes = req.body
     let fouten = 0
     let object = {}
@@ -35,6 +39,10 @@ app.post('/testkeuzes', (req, res) => {
 })
 
 app.delete('/testkeuzes/:keuze', (req, res) => {
+    const origin = req.get('Origin');
+    if (origin !== 'https://zenbone.site') {
+    return res.status(403).json({ message: 'Niet toegestaan (origin)' });
+    }
     let oudekeuze = { [req.params.keuze]: structuredClone(testkeuzesfile[req.params.keuze]) };
 
     delete testkeuzesfile[req.params.keuze]
