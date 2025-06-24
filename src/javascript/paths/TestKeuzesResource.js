@@ -38,6 +38,30 @@ app.post('/testkeuzes', (req, res) => {
     }
 })
 
+app.delete('/testkeuzes', (req, res) => {
+    // const origin = req.get('Origin');
+    // if (origin !== 'https://zenbone.site') {
+    // return res.status(403).json({ message: 'Niet toegestaan (origin)' });
+    // }
+    // let oudekeuze = { [req.params.keuze]: structuredClone(testkeuzesfile[req.params.keuze]) };
+    let oudekeuze = "test"
+    delete testkeuzesfile["favmerken"]
+    delete testkeuzesfile["onfavmerken"]
+    delete testkeuzesfile["uitvoering"]
+    delete testkeuzesfile["soort"]
+    delete testkeuzesfile["gebruik"]
+    delete testkeuzesfile["interesses"]
+    delete testkeuzesfile["minprijs"]
+    delete testkeuzesfile["maxprijs"]
+
+
+    fs.writeFileSync(filePathTestKeuzes, JSON.stringify(testkeuzesfile, null, 2));
+    res.status(200).json({
+        message: 'alle keuzes verwijderd! ',
+        data: oudekeuze
+    });
+})
+
 app.delete('/testkeuzes/:keuze', (req, res) => {
     const origin = req.get('Origin');
     if (origin !== 'https://zenbone.site') {

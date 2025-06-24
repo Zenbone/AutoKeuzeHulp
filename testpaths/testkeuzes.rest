@@ -12,4 +12,4 @@ content-type: application/json
 }
 
 ###
-DELETE  http://localhost:8080/testkeuzes/prijsmax
+DELETE  http://localhost:8080/testkeuzes
