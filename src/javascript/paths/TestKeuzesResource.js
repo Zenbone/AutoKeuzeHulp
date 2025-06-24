@@ -48,7 +48,7 @@ app.delete('/testkeuzes', (req, res) => {
     delete testkeuzesfile["favmerken"]
     delete testkeuzesfile["onfavmerken"]
     delete testkeuzesfile["uitvoering"]
-    delete testkeuzesfile["soort"]
+    delete testkeuzesfile["soortautos"]
     delete testkeuzesfile["gebruik"]
     delete testkeuzesfile["interesses"]
     delete testkeuzesfile["minprijs"]
