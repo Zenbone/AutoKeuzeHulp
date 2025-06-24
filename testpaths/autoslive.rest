@@ -35,4 +35,3 @@ DELETE  https://autokeuzehulp.onrender.com/160917062025/autos/kia/rio
 ###
 DELETE  https://autokeuzehulp.onrender.com/160917062025/autos/volkswagen/polo/tags
 
-# afbeeldingurl prijs uitvoering versnelling soort [tags] kilometerbereik verbruikper100km kofferbakruimte emissieklasse motorcilinders gewicht (kleuren? interieurruimte?)

@@ -1,50 +1,330 @@
 {
-  "toyota": {
-    "corolla": {
-      "uitvoering": "hybride",
-      "versnelling": "automaat",
-      "carrosserie": "hatchback",
-      "afbeelding": "/images/corolla.jpg",
-      "tags": [
-        "efficient",
-        "betrouwbaar"
-      ],
-      "prijs": 10000
-    },
-    "mirai": {
-      "uitvoering": "elektrisch",
-      "versnelling": "automaat",
-      "carrosserie": "sedan",
-      "afbeelding": "/images/mirai.jpg",
-      "tags": [
-        "luxe"
-      ],
-      "prijs": 20000
+    "toyota": {
+        "aygo x": {
+            "afbeelding": "/images/toyota/aygox.png",
+            "uitvoering": "benzine",
+            "versnelling": "automaat",
+            "carrosserie": "compact",
+            "tags": [
+                "goedkoop",
+                "efficient",
+                "betrouwbaar",
+                "alledaags"
+            ],
+            "prijs": 26640,
+            "0tot100tijd": 15.6,            
+            "PK": 72,
+            "verbruikper100km": 5.0,
+            "kilometerbereik": 532,
+            "kilometerperliter": 20.0,
+            "kilometerperKwh": "-",
+            "kofferbakruimte": 231,
+            "cabineruimte": "krap",
+            "gewicht": 970,
+            "emissieklasse": "6d",
+            "trekhaakoptie": "nee",
+            "maximaletrekgewicht": "-",
+            "kinderstoeloptie": "ja",
+            "motorcilinders": 3
+        },
+        "corolla touring sports": {
+            "afbeelding": "/images/toyota/corollatouringsports.png",        
+            "uitvoering": "hybrid",
+            "versnelling": "automaat",
+            "carrosserie": "stationwagon",
+            "tags": [
+                "efficient",
+                "betrouwbaar",
+                "alledaags",
+                "roadtrips",
+                "gezin",
+                "grotespullen"
+            ],
+            "prijs": 40195,
+            "0tot100tijd": 9.4,            
+            "PK": 140,
+            "verbruikper100km": 4.9,
+            "kilometerbereik": 820,
+            "kilometerperliter": 20.4,
+            "kilometerperKwh": "-",
+            "kofferbakruimte": 581,
+            "cabineruimte": "ruim",
+            "gewicht": 1520,
+            "emissieklasse": "6d",
+            "trekhaakoptie": "nee",
+            "maximaletrekgewicht": "-",
+            "kinderstoeloptie": "ja",
+            "motorcilinders": 4
+        },
+        "corolla": {
+            "afbeelding": "/images/toyota/corolla.png",
+            "uitvoering": "hybrid",
+            "versnelling": "automaat",
+            "carrosserie": "hatchback",
+            "tags": [
+                "efficient",
+                "betrouwbaar",
+                "alledaags",
+                "roadtrips",
+                "gezin"
+            ],
+            "prijs": 38195,
+            "0tot100tijd": 9.2,            
+            "PK": 140,
+            "verbruikper100km": 4.9,
+            "kilometerbereik": 1000,
+            "kilometerperliter": 20.4,
+            "kilometerperKwh": "-",
+            "kofferbakruimte": 450,
+            "cabineruimte": "ruim",
+            "gewicht": 1350,
+            "emissieklasse": "6d",
+            "trekhaakoptie": "nee",
+            "maximaletrekgewicht": "-",
+            "kinderstoeloptie": "ja",
+            "motorcilinders": 4
+        },
+        "yaris": {
+            "afbeelding": "/images/toyota/yaris.png",
+            "uitvoering": "hybrid",
+            "versnelling": "automaat",
+            "carrosserie": "compact-hatchback",
+            "tags": [
+                "efficient",
+                "betrouwbaar",
+                "goedkoop",
+                "alledaags"
+            ],
+            "prijs": 22460,
+            "0tot100tijd": 9.7,            
+            "PK": 116,
+            "verbruikper100km": 4.2,
+            "kilometerbereik": 750,
+            "kilometerperliter": 23.8,
+            "kilometerperKwh": "-",
+            "kofferbakruimte": 286,
+            "cabineruimte": "redelijk",
+            "gewicht": 1090,
+            "emissieklasse": "6d",
+            "trekhaakoptie": "nee",
+            "maximaletrekgewicht": "-",
+            "kinderstoeloptie": "ja",
+            "motorcilinders": 3
+        },
+        "gr yaris": {
+            "afbeelding": "/images/toyota/gryaris.png",
+            "uitvoering": "benzine",
+            "versnelling": "schakel",
+            "carrosserie": "compact-hatchback",
+            "tags": [
+                "betrouwbaar",
+                "sportief",
+                "weekend"                
+            ],
+            "prijs": 81795,
+            "0tot100tijd": 5.5,
+            "PK": 280,
+            "verbruikper100km": 8.7,
+            "kilometerbereik": 552,
+            "kilometerperliter": 11.5,
+            "kilometerperKwh": "-",
+            "kofferbakruimte": 174,
+            "cabineruimte": "krap",
+            "gewicht": 1280,
+            "emissieklasse": "6d",
+            "trekhaakoptie": "nee",
+            "maximaletrekgewicht": "-",
+            "kinderstoeloptie": "ja",
+            "motorcilinders": 3
+        },
+        "prius": {
+            "afbeelding": "/images/toyota/prius.png",
+            "uitvoering": "plug-in-hybrid",
+            "versnelling": "automaat",
+            "carrosserie": "sedan",
+            "tags": [
+                "efficient",
+                "betrouwbaar",
+                "alledaags"
+            ],
+            "prijs": 43615,
+            "0tot100tijd": 6.8,            
+            "PK": 223,
+            "verbruikper100km": 0.5,
+            "kilometerbereik": 860,
+            "kilometerperliter": "-",
+            "kilometerperKwh": 150,
+            "kofferbakruimte": 284,
+            "cabineruimte": "redelijk",
+            "gewicht": 1520,
+            "emissieklasse": "6d",
+            "trekhaakoptie": "nee",
+            "maximaletrekgewicht": "-",
+            "kinderstoeloptie": "ja",
+            "motorcilinders": 4
+        },
+        "mirai": {
+            "afbeelding": "/images/toyota/mirai.png",
+            "uitvoering": "waterstof",
+            "versnelling": "automaat",
+            "carrosserie": "sedan",
+            "tags": [
+                "efficient",
+                "luxe",
+                "gezin"
+            ],
+            "prijs": 75995,
+            "0tot100tijd": 9.0,            
+            "PK": 182,
+            "verbruikper100km": 0,
+            "kilometerbereik": 650,
+            "kilometerperliter": "-",
+            "kilometerperKwh": 0,
+            "kofferbakruimte": 404,
+            "cabineruimte": "ruim",
+            "gewicht": 1930,
+            "emissieklasse": "6d",
+            "trekhaakoptie": "nee",
+            "maximaletrekgewicht": "-",
+            "kinderstoeloptie": "ja",
+            "motorcilinders": "-"
+        },
+        "yaris cross": {
+            "afbeelding": "/images/toyota/yariscross.png",
+            "uitvoering": "hybrid",
+            "versnelling": "automaat",
+            "carrosserie": "compact-suv",
+            "tags": [
+                "efficient",
+                "betrouwbaar",
+                "alledaags",
+                "gezin"
+            ],
+            "prijs": 28995,
+            "0tot100tijd": 11.2,
+            "PK": 116,
+            "verbruikper100km": 4.5,
+            "kilometerbereik": 710,
+            "kilometerperliter": 22.2,
+            "kilometerperKwh": "-",
+            "kofferbakruimte": 397,
+            "cabineruimte": "redelijk",
+            "gewicht": 1375,
+            "emissieklasse": "6d",
+            "trekhaakoptie": "nee",
+            "maximaletrekgewicht": "-",
+            "kinderstoeloptie": "ja",
+            "motorcilinders": 4
+        },
+        "corolla cross": {
+            "afbeelding": "/images/toyota/corollacross.webp",
+            "uitvoering": "hybrid",
+            "versnelling": "automaat",
+            "carrosserie": "suv",
+            "tags": [
+                "efficient",
+                "betrouwbaar",
+                "alledaags",
+                "trekhaak",
+                "roadtrips"
+            ],
+            "prijs": 27970,
+            "0tot100tijd": 8.5,
+            "PK": 196,
+            "verbruikper100km": 5.6,
+            "kilometerbereik": 640,
+            "kilometerperliter": 17.9,
+            "kilometerperKwh": "-",
+            "kofferbakruimte": 598,
+            "cabineruimte": "ruim",
+            "gewicht": 1570,
+            "emissieklasse": "6d",
+            "trekhaakoptie": "ja",
+            "maximaletrekgewicht": 1500,
+            "kinderstoeloptie": "ja",
+            "motorcilinders": 4
+
+        },
+        "c-hr": {
+            "afbeelding": "/images/toyota/chr.webp",
+            "uitvoering": "hybrid",
+            "versnelling": "automaat",
+            "carrosserie": "compact-suv",
+            "tags": [
+                "efficient",
+                "betrouwbaar",
+                "alledaags"
+            ],
+            "prijs": 35995,
+            "0tot100tijd": 9.9,
+            "PK": 140,
+            "verbruikper100km": 4.8,
+            "kilometerbereik": 800,
+            "kilometerperliter": 20.8,
+            "kilometerperKwh": "-",
+            "kofferbakruimte": 377,
+            "cabineruimte": "redelijk",
+            "gewicht": 1505,
+            "emissieklasse": "6d",
+            "trekhaakoptie": "nee",
+            "maximaletrekgewicht": "-",
+            "kinderstoeloptie": "ja",
+            "motorcilinders": 4
+
+        },
+        "rav4": {
+            "afbeelding": "/images/toyota/rav4.png",
+            "uitvoering": "plug-in-hybrid",
+            "versnelling": "automaat",
+            "carrosserie": "suv",
+            "tags": [
+                "efficiënt",
+                "sportief",
+                "trekhaak",
+                "roadtrips"
+            ],
+            "prijs": 50995,
+            "0tot100tijd": 6.0,
+            "PK": 306,
+            "verbruikper100km": 1.0,
+            "kilometerbereik": 600,
+            "kilometerperliter": "-",
+            "kilometerperKwh": 150,
+            "kofferbakruimte": 580,
+            "cabineruimte": "ruim",
+            "gewicht": 1830,
+            "emissieklasse": "6d",
+            "trekhaakoptie": "ja",
+            "maximaletrekgewicht": 1650,
+            "kinderstoeloptie": "ja",
+            "motorcilinders": 4
+
+        },
+        "bz4x": {
+            "afbeelding": "/images/toyota/bz4x.png",
+            "uitvoering": "elektrisch",
+            "versnelling": "automaat",
+            "carrosserie": "suv",
+            "tags": [
+                "efficient",
+                "gezin",
+                "roadtrips"
+            ],
+            "prijs": 44000,
+            "0tot100tijd": 6.5,
+            "PK": 204,
+            "verbruikper100km": 18.5,
+            "kilometerbereik": 405,
+            "kilometerperliter": "-",
+            "kilometerperKwh": 5.4,
+            "kofferbakruimte": 785,
+            "cabineruimte": "ruim",
+            "gewicht": 2050,
+            "emissieklasse": "6d",
+            "trekhaakoptie": "ja",
+            "maximaletrekgewicht": 1500,
+            "kinderstoeloptie": "ja",
+            "motorcilinders": "-"
+        }
     }
-  },
-  "volkswagen": {
-    "polo": {
-      "uitvoering": "benzine",
-      "versnelling": "schakel",
-      "carrosserie": "compact",
-      "afbeelding": "/images/volkswagenpolo.jpg",
-      "tags": [
-        "goedkoop",
-        "betrouwbaar"
-      ],
-      "prijs": 5000
-    }
-  },
-  "kia": {
-    "rio": {
-      "uitvoering": "diesel",
-      "versnelling": "schakel",
-      "carrosserie": "sedan",
-      "afbeelding": "/images/kiario.jpg",
-      "tags": [
-        "goedkoop"
-      ],
-      "prijs": 8000
-    }
-  }
 }
