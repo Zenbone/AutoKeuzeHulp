@@ -39,12 +39,22 @@ app.post('/testkeuzes', (req, res) => {
 })
 
 app.delete('/testkeuzes', (req, res) => {
-    // const origin = req.get('Origin');
-    // if (origin !== 'https://zenbone.site') {
-    // return res.status(403).json({ message: 'Niet toegestaan (origin)' });
-    // }
-    // let oudekeuze = { [req.params.keuze]: structuredClone(testkeuzesfile[req.params.keuze]) };
-    let oudekeuze = "test"
+    const origin = req.get('Origin');
+    if (origin !== 'https://zenbone.site') {
+    return res.status(403).json({ message: 'Niet toegestaan (origin)' });
+    }
+
+    let oudekeuze = { 
+    "favmerken" : testkeuzesfile["favmerken"],
+    "onfavmerken" : testkeuzesfile["onfavmerken"],
+    "uitvoering" : testkeuzesfile["uitvoering"],
+    "soortautos" : testkeuzesfile["soortautos"],
+    "gebruik" : testkeuzesfile["gebruik"],
+    "interesses" : testkeuzesfile["interesses"],
+    "minprijs" : testkeuzesfile["minprijs"],
+    "maxprijs" : testkeuzesfile["maxprijs"]
+    }
+    
     delete testkeuzesfile["favmerken"]
     delete testkeuzesfile["onfavmerken"]
     delete testkeuzesfile["uitvoering"]
