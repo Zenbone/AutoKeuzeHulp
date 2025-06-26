@@ -4,6 +4,8 @@ import fs from 'fs';
 import rateLimit from 'express-rate-limit';
 
 const app = express();
+
+app.set('trust proxy', 1);
 const requestlimit = rateLimit({
   windowMs: 1 * 60 * 1000,
   max: 30,
