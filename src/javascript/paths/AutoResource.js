@@ -17,10 +17,10 @@ app.get('/autos/:merk/:model/:spec', (req, res) => {
 })
 
 app.post(`/${niks}/autos`, (req, res) => {
-  // const origin = req.get('Origin');
-  // if (origin !== 'https://zenbone.site') {
-  //   return res.status(403).json({ message: 'Niet toegestaan (origin)' });
-  // }
+  const origin = req.get('Origin');
+  if (origin !== 'https://zenbone.site') {
+    return res.status(403).json({ message: 'Niet toegestaan (origin)' });
+  }
   let { merk, model, specs } = req.body
   let object = {}
 
@@ -43,10 +43,10 @@ app.post(`/${niks}/autos`, (req, res) => {
 })
 
 app.patch(`/${niks}/autos/:merk/:model`, (req, res) => {
-  // const origin = req.get('Origin');
-  // if (origin !== 'https://zenbone.site') {
-  //   return res.status(403).json({ message: 'Niet toegestaan (origin)' });
-  // }
+  const origin = req.get('Origin');
+  if (origin !== 'https://zenbone.site') {
+    return res.status(403).json({ message: 'Niet toegestaan (origin)' });
+  }
   let merk = req.params.merk
   let model = req.params.model
   let nieuwespecs = req.body
@@ -66,10 +66,10 @@ app.patch(`/${niks}/autos/:merk/:model`, (req, res) => {
 })
 
 app.delete(`/${niks}/autos/:merk/:model/:spec`, (req, res) => {
-  // const origin = req.get('Origin');
-  // if (origin !== 'https://zenbone.site') {
-  //   return res.status(403).json({ message: 'Niet toegestaan (origin)' });
-  // }
+  const origin = req.get('Origin');
+  if (origin !== 'https://zenbone.site') {
+    return res.status(403).json({ message: 'Niet toegestaan (origin)' });
+  }
   let oudespec = { [req.params.spec]: structuredClone(autosfile[req.params.merk][req.params.model][req.params.spec]) };
 
   delete autosfile[req.params.merk][req.params.model][req.params.spec]
@@ -82,10 +82,10 @@ app.delete(`/${niks}/autos/:merk/:model/:spec`, (req, res) => {
 })
 
 app.delete(`/${niks}/autos/:merk/:model`, (req, res) => {
-  // const origin = req.get('Origin');
-  // if (origin !== 'https://zenbone.site') {
-  //   return res.status(403).json({ message: 'Niet toegestaan (origin)' });
-  // }
+  const origin = req.get('Origin');
+  if (origin !== 'https://zenbone.site') {
+    return res.status(403).json({ message: 'Niet toegestaan (origin)' });
+  }
   let oudemodel = { [req.params.model]: structuredClone(autosfile[req.params.merk][req.params.model]) };
 
   delete autosfile[req.params.merk][req.params.model]
@@ -98,10 +98,10 @@ app.delete(`/${niks}/autos/:merk/:model`, (req, res) => {
 })
 
 app.delete(`/${niks}/autos/:merk/:model`, (req, res) => {
-  // const origin = req.get('Origin');
-  // if (origin !== 'https://zenbone.site') {
-  //   return res.status(403).json({ message: 'Niet toegestaan (origin)' });
-  // }
+  const origin = req.get('Origin');
+  if (origin !== 'https://zenbone.site') {
+    return res.status(403).json({ message: 'Niet toegestaan (origin)' });
+  }
 
   let oudemerk = { [req.params.merk]: structuredClone(autosfile[req.params.merk]) };
 
